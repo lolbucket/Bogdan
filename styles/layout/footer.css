@@ -1,0 +1,50 @@
+/* --- Footer --- */
+
+.footer {
+	background-color: #000;
+	padding-block: 20px;
+	color: #fff;
+}
+
+.footer__inner {
+	display: flex;
+}
+
+.footer__title {
+	font-weight: 700;
+	position: relative;
+	max-width: fit-content;
+	margin-bottom: 10px;
+}
+
+.footer__title::after {
+	content: "";
+	position: absolute;
+	background-color: currentColor;
+	width: 30%;
+	height: 2px;
+	bottom: -6px;
+	left: 0;
+}
+
+/* --- Socials --- */
+
+.socials__list {
+	margin-top: 20px;
+	display: flex;
+	gap: 10px;
+}
+
+.socials__item {
+	color: #fff;
+}
+
+.socials__item a {
+	color: inherit;
+	font-size: 1.25rem;
+	transition: color var(--transition-duration);
+}
+
+.socials__item a:hover {
+	color: rgba(255, 255, 255, 0.8);
+}
