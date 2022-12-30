@@ -1,3 +1,10 @@
+/* --- Layout --- */
+@import url('./layout/nav.css');
+@import url('./layout/footer.css');
+
+/* --- Components --- */
+@import url('./components/hero.css');
+
 body {
 	font-family: "Roboto", sans-serif;
 }
@@ -17,78 +24,28 @@ body {
 	color: inherit;
 }
 
-/* --- Nav --- */
-
-.nav {
-	position: absolute;
-	width: 100%;
-	color: #fff;
-}
-
-.nav--fixed {
-	position: fixed;
-	box-shadow: 0 2px 5px 0 rgb(0, 0, 0, .2);
-	background-color: #fff;
-	color: #000;
-}
-
-.nav__inner {
-	padding-block: 20px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	align-items: center;
-}
-
-.nav__list {
-	display: flex;
-	gap: 10px;
-}
-
-.nav__list--links {
-	justify-self: center;
-}
-
-.nav__list--actions {
-	justify-self: end;
-	gap: 5px;
-}
-
-.nav__list-item {
-	padding: .5rem;
+.section__title {
+	font-size: 1.5rem;
+	font-weight: 700;
 	position: relative;
-	/* color: #000; */
+	margin-bottom: 20px;
+	max-width: fit-content;
 }
 
-.nav__link {
-	text-decoration: none;
-	color: inherit;
+.section__title::after {
+	content: "";
+	position: absolute;
+	background-color: currentColor;
+	width: 30%;
+	height: 4px;
+	bottom: -8px;
+	left: 0;
 }
 
-.nav__link--active {
-	text-decoration: underline;
-	text-underline-offset: 5px;
-}
 
-/* --- Hero --- */
 
-.hero {
-	min-height: 100vh;
-	background: center / cover rgb(0, 0, 0) url('../assets/img/hero__bg.jpg') no-repeat;
+/* --- Popular products --- */
 
-	color: #fff;
-	padding-block: 20px;
-}
-
-.hero__content {
-	margin-top: 150px;
-	text-align: center;
-}
-
-.hero__title {
-	font-size: 7rem;
-	margin-bottom: 10px;
-}
-
-.hero__description {
-	font-size: 2rem;
+.popular__products {
+	padding-block: 40px;
 }
