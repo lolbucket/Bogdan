@@ -4,7 +4,7 @@
 	min-height: 100vh;
 	background: center / cover rgb(0, 0, 0) url('../../assets/img/hero__bg.jpg') no-repeat;
 
-	color: #fff;
+	color: var(--clr-light-primary);
 	padding-block: 20px;
 }
 

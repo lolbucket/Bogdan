@@ -3,14 +3,14 @@
 .nav {
 	position: absolute;
 	width: 100%;
-	color: #fff;
+	color: var(--clr-light-primary);
 }
 
 .nav--fixed {
 	position: fixed;
 	box-shadow: 0 2px 5px 0 rgb(0, 0, 0, .2);
-	background-color: #fff;
-	color: #000;
+	background-color: var(--clr-light-primary);
+	color: var(--clr-dark-primary);
 }
 
 .nav__inner {
@@ -37,7 +37,6 @@
 .nav__list-item {
 	padding: .5rem;
 	position: relative;
-	/* color: #000; */
 }
 
 .nav__link {

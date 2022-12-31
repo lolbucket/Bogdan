@@ -1,3 +1,9 @@
 :root {
 	--transition-duration: .2s;
+
+	--clr-light-primary: #fff;
+	--clr-light-hover: rgba(255, 255, 255, 0.8);
+	--clr-light-secondary: rgb(214, 214, 214);
+
+	--clr-dark-primary: #000;
 }

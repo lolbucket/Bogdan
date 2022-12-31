@@ -1,9 +1,9 @@
 /* --- Footer --- */
 
 .footer {
-	background-color: #000;
-	padding-block: 20px;
-	color: #fff;
+	background-color: var(--clr-dark-primary);
+	padding-block: 20px 10px;
+	color: var(--clr-light-primary);
 }
 
 .footer__inner {
@@ -36,7 +36,7 @@
 }
 
 .socials__item {
-	color: #fff;
+	color: var(--clr-light-primary);
 }
 
 .socials__item a {
@@ -46,5 +46,12 @@
 }
 
 .socials__item a:hover {
-	color: rgba(255, 255, 255, 0.8);
+	color: var(--clr-light-hover);
+}
+
+.footer__copy {
+	text-align: center;
+	margin-top: 10px;
+	font-size: .75rem;
+	color: var(--clr-light-secondary);
 }
