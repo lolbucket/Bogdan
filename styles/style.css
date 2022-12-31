@@ -57,3 +57,19 @@ header:has(.section__title) {
 	bottom: -8px;
 	left: 0;
 }
+
+/* --- Utilities */
+
+.nav-indent {
+	padding-top: 80px;
+}
+
+.body-flex {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.body-flex>main {
+	flex: 1;
+}
