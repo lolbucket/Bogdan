@@ -24,6 +24,11 @@ body {
 
 .logo a {
 	color: inherit;
+	transition: color var(--transition-duration);
+}
+
+.logo a:hover {
+	color: var(--clr-light-hover);
 }
 
 .section__title {
