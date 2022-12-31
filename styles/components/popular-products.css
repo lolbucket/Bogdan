@@ -29,3 +29,8 @@
 .popular-products__header-link:hover i {
 	translate: 4px;
 }
+
+.popular-products__list {
+	display: flex;
+	gap: 20px;
+}
