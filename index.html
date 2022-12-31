@@ -40,6 +40,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      defer
+      type="module"
+      src="./scripts/index.js"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -127,16 +132,7 @@
           </header>
           <div class="popular-products__inner">
             <!-- todo: add stylings to card -->
-            <article class="product-card">
-              <a
-                href="#"
-                class="product-card__img-wrapper"
-              ></a>
-              <div class="product-card__content">
-                <p class="product-card__title">Title</p>
-                <p class="product-card__price">0.00</p>
-              </div>
-            </article>
+            <ul class="popular-products__list"></ul>
           </div>
         </section>
       </div>
