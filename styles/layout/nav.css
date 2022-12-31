@@ -52,4 +52,5 @@
 .nav__link--active {
 	text-decoration: underline;
 	text-underline-offset: 5px;
+	pointer-events: none;
 }
