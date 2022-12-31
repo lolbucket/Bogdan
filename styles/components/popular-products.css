@@ -1,0 +1,31 @@
+/* --- Popular products --- */
+
+.popular-products {
+	padding-block: 40px;
+}
+
+.popular-products__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.popular-products__header-link {
+	color: inherit;
+	text-decoration: none;
+	font-size: 14px;
+	transition: color var(--transition-duration);
+}
+
+.popular-products__header-link i {
+	margin-left: 2px;
+	transition: translate var(--transition-duration);
+}
+
+.popular-products__header-link:hover {
+	color: var(--clr-dark-hover);
+}
+
+.popular-products__header-link:hover i {
+	translate: 4px;
+}

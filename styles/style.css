@@ -6,6 +6,7 @@
 
 /* --- Components --- */
 @import url('./components/hero.css');
+@import url('./components/popular-products.css');
 
 body {
 	font-family: "Roboto", sans-serif;
@@ -39,6 +40,14 @@ body {
 	max-width: fit-content;
 }
 
+header:has(.section__title) .section__title {
+	margin-bottom: 0;
+}
+
+header:has(.section__title) {
+	margin-bottom: 20px;
+}
+
 .section__title::after {
 	content: "";
 	position: absolute;
@@ -47,12 +56,4 @@ body {
 	height: 4px;
 	bottom: -8px;
 	left: 0;
-}
-
-
-
-/* --- Popular products --- */
-
-.popular__products {
-	padding-block: 40px;
 }
