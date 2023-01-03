@@ -19,6 +19,10 @@
       rel="stylesheet"
       href="../styles/style.css"
     />
+    <link
+      rel="stylesheet"
+      href="../styles/layout/products.css"
+    />
 
     <link
       rel="preconnect"
@@ -40,6 +44,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      defer
+      type="module"
+      src="../scripts/cataloguePage.js"
+    ></script>
   </head>
   <body class="body-flex">
     <header class="header">
@@ -71,7 +80,7 @@
               </li>
               <li class="nav__list-item">
                 <a
-                  href="./pages/products.html"
+                  href="./pages/catalogue.html"
                   class="nav__link nav__link--active"
                 >
                   Каталог
@@ -102,10 +111,27 @@
     </header>
 
     <main class="nav-indent">
-      <div class="container">
-        <aside class="filter__aside">
+      <div class="container main__wrapper">
+        <aside class="categories__aside">
+          <!-- todo: add categories -->
           <h2 class="section__title">Категорії</h2>
+          <h2 class="section__title"></h2>
         </aside>
+        <div class="main__content">
+          <div class="sorter">
+            <select
+              class="sorter__select"
+              name="sortBy"
+              id="sortBy"
+            >
+              <option value="rating">За рейтингом</option>
+              <option value="new">Новинки</option>
+              <option value="cheap-expensive">Від дешевих до дорогих</option>
+              <option value="expensive-cheap">Від дорогих до дешевих</option>
+            </select>
+          </div>
+          <ul class="products__list"></ul>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -135,7 +161,7 @@
                 <a href="../index.html">Головна</a>
               </li>
               <li class="footer-navigation__item">
-                <a href="./pages/products.html">Каталог</a>
+                <a href="./pages/catalogue.html">Каталог</a>
               </li>
             </ul>
           </div>
