@@ -4,6 +4,7 @@
 	position: absolute;
 	width: 100%;
 	color: var(--clr-light-primary);
+	z-index: 1;
 }
 
 .nav--fixed {
