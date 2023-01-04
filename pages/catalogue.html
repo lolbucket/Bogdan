@@ -145,13 +145,19 @@
             <h2 class="categories__title">Ціна</h2>
             <form class="categories__price">
               <input
+                id="price-min"
                 type="number"
                 class="categories-price__input"
+                min="0"
+                value="0"
               />
               <span class="categories-price__divider">—</span>
               <input
+                id="price-max"
                 type="number"
                 class="categories-price__input"
+                value="20000"
+                max="20000"
               />
               <button
                 class="categories-price__btn"
