@@ -19,20 +19,6 @@ body {
 	padding-inline: 20px;
 }
 
-.logo {
-	max-width: 35px;
-	width: 100%;
-}
-
-.logo a {
-	color: inherit;
-	transition: color var(--transition-duration);
-}
-
-.logo a:hover {
-	color: var(--clr-light-hover);
-}
-
 .section__title {
 	font-size: 1.5rem;
 	font-weight: 700;
