@@ -1,6 +1,6 @@
 import { displayProducts } from './products.js';
 
-displayProducts();
+displayProducts({ productPath: './products/iphone-13.html' });
 
 const getPriceFilterValues = () => {
   const categoryPriceForm = document.querySelector('.categories__price');

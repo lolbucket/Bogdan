@@ -13,11 +13,11 @@ export const displayPopularProducts = () => {
   productsList.innerHTML = popularProductCards.join('');
 };
 
-export const displayProducts = () => {
+export const displayProducts = ({ productPath } = {}) => {
   const productsList = document.querySelector('.products__list');
 
   const productCards = products.map(
-    (product) => `<li>${createProductCardHTML(product)}</li>`,
+    (product) => `<li>${createProductCardHTML(product, productPath)}</li>`,
   );
 
   productsList.innerHTML = productCards.join('');
